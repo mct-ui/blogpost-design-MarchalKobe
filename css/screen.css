@@ -177,6 +177,7 @@ a:focus {
 .c-author {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .c-author__avatar {
