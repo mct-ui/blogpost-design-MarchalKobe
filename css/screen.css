@@ -29,7 +29,7 @@ html {
     color: #5C6366;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
@@ -185,6 +185,10 @@ a:focus {
     padding: 0 24px;
 }
 
+.c-article__date {
+    margin: 0;
+}
+
 /* 
     Components: Author
 */
@@ -219,6 +223,20 @@ a:focus {
 }
 
 /* 
+    Components: Quote
+*/
+
+.c-quote {
+    font-size: 23px;
+    font-style: italic;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 24px;
+    color: #00B37D;
+    background-color: #F2FAF8;
+}
+
+/* 
     Utilities: max-width
     ---
     Utility classes to put specific max widths onto elements.
@@ -228,15 +246,19 @@ a:focus {
     max-width: 36em;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 375px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 375px) {
+    h1 {
+        font-size: 36px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
     h1 {
-        font-size: 58px;
+        font-size: 46px;
         line-height: 64px;
     }
 
@@ -279,9 +301,13 @@ a:focus {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Extra large devices (large desktops, 1024px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 52px;
+    }
+}
 
 /*
     Print styles.
